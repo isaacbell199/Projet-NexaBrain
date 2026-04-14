@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import { Toaster } from "sonner";
 import "./globals.css";
 
 const inter = Inter({ 
@@ -40,6 +41,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          {/* Toaster gère les notifications proprement dans Tauri */}
+          <Toaster position="bottom-right" richColors closeButton />
         </ThemeProvider>
       </body>
     </html>
