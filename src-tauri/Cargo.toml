@@ -52,8 +52,8 @@ encoding_rs = "0.8"
 # Supports: LLaMA 3.x, Mistral, Qwen 2.x, Gemma 2, Phi-3, Yi, etc.
 # ============================================================================
 
-llama-cpp-2 = { version = "=0.1.143", optional = true }
-llama-cpp-sys-2 = { version = "=0.1.143", optional = true }
+llama-cpp-2 = { version = "=0.1.140", optional = true }
+llama-cpp-sys-2 = { version = "=0.1.140", optional = true }
 
 [features]
 default = ["llama-native"]
